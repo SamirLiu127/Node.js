@@ -74,3 +74,13 @@ EventEmitter 定義了一個特殊的事件 error，在遇到錯誤時會發射e
 首先，具有某個實體功能的對象實現事件符號語義，事件的監聽和發射應該是一個對象的方法。<br>
 其次JavaScript的對像機制是基於原型的，支持部分多重繼承，繼承EventEmitter不會打亂對象原有的繼承關係。<br>
 ## Node.js 函數
+類似JavaScript:
+```
+function say(word) {
+	console.log(word);
+}
+function execute(someFunction, value) {
+	someFunction(value);
+}
+execute(say, "Hello");
+```
